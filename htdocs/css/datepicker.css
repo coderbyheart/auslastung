@@ -1,0 +1,18 @@
+/* $Id: datepicker.css 74 2009-05-03 15:30:42Z m $ */
+.datepicker-div { position: absolute; font-size: 0.675em; font-family: Arial; padding: 2px; margin: 0; display: none; z-index: 1000; background-color: #7ea8dd; }
+.datepicker-input { background: transparent url(/shared/silk/calendar.png) no-repeat 99% 50%; }
+input.datepicker-input { background-color: #fff; }
+.datepicker-table { margin: 0; }
+.datepicker-table td { text-align: center; padding: 3px 5px; cursor: pointer; background-color: #fff; }
+td.datepicker-weekend { background-color: #bfd3eb; cursor: not-allowed; }
+td.datepicker-holiday { background-color: #9bd494; cursor: not-allowed; }
+td.datepicker-offmonth { color: #999; }
+.datepicker-table-weekselect tr:hover td, .datepicker-table-dayselect td:hover, td.datepicker-selected { background-color: #888; color: #fff; font-weight: bold; }
+.datepicker-caption, .datepicker-table th, .datepicker-prev, .datepicker-next { font-weight: bold; text-align: center; padding: 3px; }
+.datepicker-caption { background-color: #ff9654; }
+.datepicker-table th { background-color: #ffb86d; }
+.datepicker-prev, .datepicker-next { position: absolute; top: 2px; text-align: center; cursor: pointer; width: 15px; }
+.datepicker-prev { left: 2px; }
+.datepicker-next { right: 2px; }
+.datepicker-prev:hover, .datepicker-next:hover { background-color: #888; color: #fff; }
+.datepicker-loading { position: absolute; text-align: center; background: #fff url(/themes/auslastung/images/calendar-loading.gif) no-repeat 50% 50%; display: none; bottom: 1px; left: 16px; }

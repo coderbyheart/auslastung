@@ -1,0 +1,22 @@
+CREATE TABLE assignment (
+  id int(10) unsigned NOT NULL auto_increment,
+  project int(10) unsigned default NULL,
+  person int(10) unsigned default NULL,
+  start date default NULL COMMENT 'Start date',
+  end date default NULL COMMENT 'Calculated end date',
+  manual_end date default NULL COMMENT 'Manual set end date',
+  distribute_duration ENUM( '0', '1' ) NOT NULL DEFAULT '0' COMMENT 'Distribute duration between start and manual_end',
+  duration int(10) unsigned default NULL COMMENT 'Duration in hours',
+  probability int(10) unsigned default NULL COMMENT 'Probability that assignment will actually happen',
+  description text,
+  is_homeoffice ENUM( '0', '1' ) NOT NULL DEFAULT '0' COMMENT 'Person is in home office',
+  author int(10) unsigned default NULL COMMENT 'User who created this entry',
+  PRIMARY KEY  (id),
+  KEY project (project),
+  KEY person (person),
+  KEY probability (probability),
+  CONSTRAINT assignment_ibfk_1 FOREIGN KEY (project) REFERENCES project (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT assignment_ibfk_2 FOREIGN KEY (person) REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT assignment_ibfk_3 FOREIGN KEY (probability) REFERENCES probability (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT assignment_ibfk_4 FOREIGN KEY (author) REFERENCES user (id) ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Assigns people to assignments.';

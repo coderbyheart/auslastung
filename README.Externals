@@ -1,0 +1,31 @@
+This project uses these external libraries:
+
+  Smarty
+  http://smarty.net/
+  Licensed under the LGPL: http://smarty-php.googlecode.com/svn/trunk/COPYING.lib
+
+  ez Components
+  http://components.ez.no/
+  Licensed under the new BSD license: http://ezcomponents.org/introduction/license
+
+  Doctrine
+  http://www.doctrine-project.org/
+  Licensed under an original license: http://svn.doctrine-project.org/branches/1.1/LICENSE
+
+  FirePHP
+  http://www.firephp.org/
+  Licensed under the new BSD license: http://www.firephp.org/Wiki/Main/License
+
+  YUI CSS
+  http://developer.yahoo.net/yui/
+  Licensed under the BSD License: http://developer.yahoo.com/yui/license.html
+
+  MooTools
+  http://mootools.net/
+  Licensed under the MIT License: http://www.opensource.org/licenses/mit-license.php
+
+  Silk Icons
+  http://famfamfam.com/lab/icons/silk/
+  Licensed under the Creative Commons Attribution 2.5 License: http://creativecommons.org/licenses/by/2.5/
+
+EOF: $Id: README.Externals 2 2008-12-19 07:54:52Z m $

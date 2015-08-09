@@ -1,0 +1,26 @@
+System Requirements
+
+	- Apache 2
+	- mod_rewrite
+	- PHP 5.2+
+
+Install required dependencies via pear
+
+	pear channel-discover pear.doctrine-project.org
+	pear install pear.doctrine-project.org/Doctrine
+	pear channel-discover pear.firephp.org
+	pear install firephp/FirePHPCore
+	pear channel-discover components.ez.no
+	pear install -a ezc/eZComponents
+	pear channel-discover pear.symfony-project.com
+	pear channel-discover pear.phpunit.de
+	pear install phpunit/PHPUnit
+
+Copy data/config.php.dist to data/config.php and tailor to your needs.
+
+Execute ./cli and select Install (1) then Run all (4)
+
+The folder ./var and it's subfolders must be writeable by the webserver
+user.
+
+EOF: $Id: README.Installation 183 2012-01-02 10:27:29Z m $

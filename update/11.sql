@@ -1,0 +1,1 @@
+ALTER TABLE assignment ADD is_homeoffice ENUM( '0', '1' ) NOT NULL DEFAULT '0' COMMENT 'Person is in home office' AFTER description;

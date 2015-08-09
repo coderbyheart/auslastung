@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <title>Calendar Demo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="AUTHOR" content="Markus Tacker | http://coderbyheart.de/" />
+        <link rel="stylesheet" type="text/css" href="/themes/auslastung/css/reset-min.css" />
+        <script type="text/javascript" src="/themes/shared/js/mootools-1.2.1-core-nc.js"></script>
+		<script type="text/javascript" src="/themes/shared/js/mootools-1.2-more.js"></script>
+		<script type="text/javascript" src="/themes/auslastung/js/Auslastung.js"></script>
+		<script type="text/javascript" src="/themes/auslastung/js/Auslastung/DatePicker.js"></script>
+		<link rel="stylesheet" type="text/css" href="/themes/auslastung/css/datepicker.css" />
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		window.addEvent( 'domready', function() {
+			var DatePicker = new Auslastung.DatePicker();
+			DatePicker.add($('startdate'));
+			DatePicker.add($('startweek'), {'selectType': 'week'});
+			DatePicker.addEvent('change', function(date) { console.log(date)});
+		});
+		/* ]]> */
+		</script>
+</head>
+<body>
+	<form method="post" action="">
+		<p>
+			<label for="startdate">Start date</label>
+			<input type="text" maxlength="10" value="" id="startdate" />
+		</p>
+		<p>
+			<label for="startdate">Start week</label>
+			<input type="text" maxlength="10" value="" id="startweek" />
+		</p>
+	</form>
+</body>
+</html>
+<!-- EOF: $Id: calendar-test.html 42 2009-03-18 23:09:53Z m $ -->

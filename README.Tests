@@ -1,0 +1,16 @@
+
+Tests sind mit PHPUnit realisiert: http://www.phpunit.de/
+
+System konfigurieren:
+
+    $this->setDsn('mysql://user:pass@hostname/testdatabase');
+    $this->setBaseHref('http://auslastung.myhost.lan/');
+
+in data/testconfig.php eintragen.
+
+Tests ausführen:
+
+  cd lib
+  phpunit Auslastung_Test_AllTests
+
+EOF: $Id: README.Tests 163 2011-12-28 16:52:03Z m $

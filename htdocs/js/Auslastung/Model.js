@@ -1,0 +1,1 @@
+Auslastung.Model = new Class();
